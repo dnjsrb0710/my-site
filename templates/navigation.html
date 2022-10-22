@@ -1,0 +1,18 @@
+<nav>
+    <ul>
+     <li><a href="/">HOME</a></li>
+     <li><a href="/webtoons">WEBTOONS</a></li>
+     <li><a href="#">WEATHER</a></li>
+    </ul>
+  </nav>
+
+  <!-- 페이지 제일 위쪽 공간 -->
+  <div class="top-blank" id="top"></div>
+
+  <!-- webtoons 페이지일 때 페이지 제일 위쪽으로 이동하는 버튼 -->
+  {% if 'webtoons' in request.path %}
+  <a class="to-top" href="#top">
+      <!-- box icon 사용 -->
+     <div><i class='bx bxs-to-top'></i></div>
+  </a>
+  {% endif %}
